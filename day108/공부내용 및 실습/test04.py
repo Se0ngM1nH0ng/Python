@@ -62,11 +62,11 @@
 ##        file.write('[ %s ] [ %s ]\n' % (tmp1,tmp2))
 
 print('문제 2번')
-with open('bList.txt','rt') as file:
+with open('bList.txt','rt') as file: # bList 를 일단 읽어옴
         content = file.read()
         print(content)
-cnt1 = 0
-cnt2 = 0
+cnt1 = 0  # 남자일때
+cnt2 = 0  # 여자일때
 
 lines = content.split('\n')
 
