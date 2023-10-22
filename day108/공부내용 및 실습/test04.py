@@ -72,7 +72,7 @@ lines = content.split('\n')
 
 for line in lines:
     if '남' in line:
-        cnt1 += 1
+        cnt1 += 1 
     elif '여' in line:
         cnt2 += 1
 

@@ -4,9 +4,9 @@
 ##사과는(은) 12000원입니다.
 aList=['사과',12000,'바나나',3900,'키위',5400]
 with open('aList.txt','wt') as file:
-    for i in range(0,len(aList),2):
+    for i in range(0,len(aList),2): # range 활용에 대해 검색해보자 
         file.write(aList[i]+'는(은) ')
-        file.write(str(aList[i+1])+'원입니다.\n')
+        file.write(str(aList[i+1])+'원입니다.\n') # 숫자 이기 때문에 str 문자열로 형변환
     print('aList.txt를 생성했습니다!')
 
 ### 문제 2
