@@ -25,7 +25,7 @@ print(randrange(10))#0~9 #선언하고 나면 바로 함수를 사용할 수 있
 print(randrange(1,10)) #1~9
 print(choice([10,11,13,15,23]))
 
-#별칭(alias)
+#별칭(alias) as
 #import 모듈명 as 별칭(alias)
 import random as r
 r.randrange(10)
