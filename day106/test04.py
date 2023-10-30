@@ -15,7 +15,7 @@ print(randrange(10)) # 0~9
 print(randrange(1,10)) # 1~9
 print(choice([10,11,13,15,23]))
 
-# 별명(alias)
+# 별명(alias) ## 별칭
 import random as r
 r.randrange(10)
 from random import randrange as rr
