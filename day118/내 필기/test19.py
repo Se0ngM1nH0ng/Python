@@ -45,6 +45,9 @@ with open('apple.csv','r' ) as file:
             sample=np.array(row[3:], dtype=int)
 print(sample)
 
+plt.plot(sample)
+plt.show()
+
 ##, 가 있으면 int 변환이 안됨
 ##
 ##해결 방법
