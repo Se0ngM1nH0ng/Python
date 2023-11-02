@@ -1,4 +1,26 @@
+##import csv
+##import matplotlib.pyplot as plt
+##
+##with open('apple.csv','r') as file:
+##    data=csv.reader(file)
+##    header=next(data)
+##    print(header)
+##    print()
+##
+##    sample=[]
+##    area=input('출력할 지역 입력>> ')
+##    for row in data:
+##        if area in row[0]:
+##            for v in row[3:]: ## 인덱스 3 번 부터
+##                sample.append(int( v )) # v.replace(',','') ## ,를 빈칸으로 없애줘
+##print(sample)
+##
+##plt.plot(sample) ## 꺾은선 그래프로 알아볼거야 
+##plt.show()
+
 import csv
+import matplotlib.pyplot as plt
+import numpy as np
 
 with open('apple.csv','r' ) as file:
     data=csv.reader(file)
@@ -8,7 +30,7 @@ with open('apple.csv','r' ) as file:
 
 ##    i=0
     sample=[]
-    area=input('출력할 동 입력 >>')
+    area=input('출력할 지역 입력 >>')
     for row in data:
 ##        i+=1
 ##        if i==5:
@@ -18,11 +40,9 @@ with open('apple.csv','r' ) as file:
 ##        if area가 들어있다면 in 행정구역에 포함된:
         
         if area in row[0]:
-            for v in row[3:]:# 내가 필요한 3번 인덱스 부터 보여줘 !    
-##                print(row)
-##                print()
-                sample.append(v) # 샘플에 append 해줘 0,1 빼고 3인덱스 부터 넣을거야 
-
+##           for v in row[3:]:# 내가 필요한 3번 인덱스 부터 보여줘 !    
+##                sample.append(v) # 샘플에 append 해줘 0,1 빼고 3인덱스 부터 넣을거야 
+            sample=np.array(row[3:], dtype=int)
 print(sample)
 
 ##, 가 있으면 int 변환이 안됨

@@ -22,7 +22,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 ##np 배열
 dice=np.random.choice(6,100000,p=[0.1,0.1,0.1,0.1,0.1,0.5])
-choice에 p 속성에 확률을 분산해놓을수 있다. 
+##choice에 p 속성에 확률을 분산해놓을수 있다. 
 plt.hist(dice,bins=6)
 plt.show()
 
