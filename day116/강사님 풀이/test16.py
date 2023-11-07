@@ -114,20 +114,11 @@ while True:
 tmpList=[] # 최대값들의 모임 리스트
 for v in studentList:
     index=subjectNameList.index(subjectName)
-    print(v)
-    print(index)
-    print('v랑 index')
     subjectTotal=v[ index ]
-    print(subjectTotal)
-    print('subjectTotal 값')
     tmpMax=np.sum(subjectTotal)
-    print(tmpMax)
-    print('tmpMax값')
     tmpList.append( tmpMax )
-    print(tmpList)
-    print('tmpList값')
-    print('====================')
-
+   
+    
 print(subjectName+' 시험 1등은 '+str(tmpList.index( max(tmpList) ) + 1)+'번 학생 입니다.')
 
 
