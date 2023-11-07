@@ -74,8 +74,8 @@ print()
 ####### 파이썬 어플의 경우 "가독성", 코테의 경우 "성능"(1중, 최대 2중 for문까지만 허용!)
 
 studentNum=0
-testNameList=['중간고사','기말고사']
-subjectNameList=['국어','영어','수학']
+testNameList=['중간고사','기말고사'] # 시험 
+subjectNameList=['국어','영어','수학'] #과목의 리스트
 for student in studentList:
     studentNum+=1
     
@@ -114,9 +114,19 @@ while True:
 tmpList=[] # 최대값들의 모임 리스트
 for v in studentList:
     index=subjectNameList.index(subjectName)
+    print(v)
+    print(index)
+    print('v랑 index')
     subjectTotal=v[ index ]
+    print(subjectTotal)
+    print('subjectTotal 값')
     tmpMax=np.sum(subjectTotal)
+    print(tmpMax)
+    print('tmpMax값')
     tmpList.append( tmpMax )
+    print(tmpList)
+    print('tmpList값')
+    print('====================')
 
 print(subjectName+' 시험 1등은 '+str(tmpList.index( max(tmpList) ) + 1)+'번 학생 입니다.')
 
