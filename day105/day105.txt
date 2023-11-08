@@ -1,12 +1,3 @@
-▶ 선 물 ◀
-1. 학원 사이트에 팀 프로젝트 게시할 수 있는 기회 ★
-	첨부해드린 양식에 맞춰서 내용 작성 후, 20일 금요일 오후 5시까지 보내주세요!~~
-	예시 1
-	http://koreaitac.com/renewal2021/community/project_view.asp?idxnum=135&clkMater=&txtMenu=&txtCurPage=6&selMater=
-	예시 2
-	http://koreaitac.com/renewal2021/community/project_view.asp?idxnum=134&clkMater=&txtMenu=&txtCurPage=6&selMater=
-2. https://blog.naver.com/coding_helper/222876211482
-
 [ 웹 흐름 ]
  == 요청 응답 처리 흐름
  == 클라이언트 서버 흐름
