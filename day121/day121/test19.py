@@ -20,18 +20,14 @@ df=pd.DataFrame(np.random.rand(8,3),index=index,columns=list('ABC'))
 # 행을 index로, 열을 'ABC'로 설정
 print(df)
 print()
-print()
-print()
 print(df['C'])
 print()
-print()
-print()
+
 
 df2=df[df['A']<0.6]
 print(df2)
 
-print()
-print()
+
 print()
 print(df['A']>=0.5)
 
