@@ -24,6 +24,7 @@ print(df['C'])
 print()
 
 
+
 df2=df[df['A']<0.6]
 print(df2)
 
